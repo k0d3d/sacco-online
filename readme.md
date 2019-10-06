@@ -12,9 +12,12 @@ the defacto method for most salary earners to finance their short term and long 
 Tech Stack
 -------------
 - MongoDB
-- Prisma
 - ExpressJs
 - Node.js
 - React.js 
 - GraphQL
+- Jest / Ts-Jest
+- SuperTest
+- Prisma
 
+*supertest is for sending http request during our test, jest ts-jest is for testing our typescript code.*

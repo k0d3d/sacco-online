@@ -6,7 +6,13 @@
     "resolveJsonModule": true,
     "moduleResolution": "node",
     "lib": ["es2015", "esnext.asynciterable"],
-    "sourceMap": true
+    "sourceMap": true,
+    "types": [
+      "reflect-metadata",
+      "jest",
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
  },
   "exclude": ["node_modules"],
   "include": ["*.ts"]
