@@ -1,0 +1,40 @@
+☐ Loan Poilcy :
+  ☐ Maximum Loan = 2 * currentSavingBalance
+  ☐ Need 3rd Party = ( currentSavingBalance > Maximum Loan ) 
+  ☐ isValid3rdParty =  ( 3rdPartyBalance <= Maximum Loan ) 
+  ☐ isValid3rdParty[]
+
+☐ User Management :
+  ☐ Sign up - As a member, I want to be able to sign up
+  ☐ Sign In - As a member, I want to be able to sign in to Sacco Online
+  ☐ Forgot Password - As a member, I want to be able to recover my lost password
+  ☐ Account Activation Email - As a member, I should receive an email link to activate my email on Sacco Online.
+  ☐ View Profile - As a member, I want to be see my Sacco Online user profile.
+  ☐ Update Profile - As a member, I want to change and update the data on my profile. 
+
+☐ User Services
+  ☐ View Balance - As a member, I can see my balance
+  ☐ View Savings - As a member, I want to see my saving activity.
+  ☐ Make payment - As a member, I want to be able to submit a new cash deposit into my account to be approved. Payment can be a deposit or a loan repayment.
+  ☐ Loan Management : 
+    ☐ View Loans - As a member, I want to see all my loan applications and filter the loan states.
+    ☐ Loans Activity -  As a member, I want to be able to view the details and activties for any loan.
+    ☐ Apply for Loan :
+      ☐ Need Guarantor - As a member, I `Need 3rd Party` determines if I need a guarantor for a loan application.
+      ☐ View Valid 3rdParty - As a member, I want to see all the valid guarantors for a loan application.
+      ☐ Elegibility = As a member, `currentSavingBalance`  determines my elegibility.
+      ☐ Submit Loan Request :
+        ☐ Pick Guarantor
+        ☐ View Repayment Plan - As a member, I want to see the schedule of how my loan will be paid back. 
+
+☐ Executive / Admin Services :
+  ☐ View all members - As a user, I want to see all members, member profile, saving activity, loan activity.
+  ☐ Search User Activity - As a user, I want to search transactions by email or by approval status `isPending | isApproved`.
+  ☐ View all Loans - As a user, I want to be able to see all Loans 
+  ☐ Search Loan transaction - As a user, I want to be able to search all Loan transactions using email or approval status.
+  ☐ Loan Activity - As a user, I want to be able to view the details and activties for any loan.
+  ☐ Approve Loan Request - As a user, I want to be able to approve member initiated loan requests
+  ☐ Approve Cash payment - As a user, I want to be able to approve member initiated cash deposits.
+  ☐ Dash Members Money - As a user, I want to be able to create create a transaction and approve it instantly.
+
+
