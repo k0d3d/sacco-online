@@ -30,3 +30,12 @@ The client-side / front-end is built in React.js using CreateReactApp. You can f
       MONGO_PATH="@127.0.0.1:27017/socco"
       PORT=8008
 
+## Checklist
+These are some of the things I attempted to achieve and cover while completing this task. 
+
+- [x] User Stories @see [todo.todo](./todo "todo.todo")
+- [ ] Business Logic
+- [x] DB Models
+- [x] Unit Tests with Jest
+- [ ] Code Documentation
+- [x] DDD and SoC
