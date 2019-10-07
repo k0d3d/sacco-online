@@ -5,17 +5,18 @@ import App from "../src/app";
 
 import * as faker from "faker";
 
-describe("fetch members account information", () => {
+describe("fetch members account information", async () => {
+  const bank = new BankController();
+
+  const app = new App([bank]);
+
+  await app.connectToTheDatabase();
+
   it("should check if member has an account", async (done) => {
 
     const memberData = {
       email: faker.internet.email(),
     };
-    const bank = new BankController();
-
-    const app = new App([bank]);
-
-    await app.connectToTheDatabase();
 
     const balance =  await bank.getMemberBalance(memberData.email);
     expect(balance).toBe(null);
@@ -26,11 +27,6 @@ describe("fetch members account information", () => {
     const memberData = {
       email: faker.internet.email(),
     };
-    const bank = new BankController();
-
-    const app = new App([bank]);
-
-    await app.connectToTheDatabase();
 
     const member = await bank.createMemberAccount(memberData.email);
 
@@ -39,8 +35,20 @@ describe("fetch members account information", () => {
     done();
   });
 
-  it("should allow a user make a payment", async () => {
-    
+  it("should submit a loan request thats below members savings", async () => {
+    expect(canLoadApproved).toBe(true)
+  })
+
+  it("should require a 3rd party to approve the loan request", () => {
+    expect(canBeApproved).toBe(false)
+  });
+
+  it("should check if a user can be a guarantor for a loan", async () => {
+    expect(canBeGuarantor).toBeDefined();
+  })
+
+  it("should return a list of possible 3rd party guarantors", async () => {
+    expect(guarantors.length).toBeGreaterThan(1);
   })
 
 });
