@@ -21,3 +21,12 @@ Tech Stack
 - Prisma
 
 *supertest is for sending http request during our test, jest ts-jest is for testing our typescript code.*
+
+# How to get started.
+The client-side / front-end is built in React.js using CreateReactApp. You can find the source files in `/client`. The server side source files is `/server` . You should make sure you have your .env variables set up correctly in `server/.env` file. Fill in values for.  
+
+      MONGO_USER=xxx
+      MONGO_PASSWORD=xxx
+      MONGO_PATH="@127.0.0.1:27017/socco"
+      PORT=8008
+
