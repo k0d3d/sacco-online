@@ -4,10 +4,16 @@ export default {
       name: 'Dashboard',
       url: '/dashboard',
       icon: 'icon-speedometer',
-      badge: {
-        variant: 'info',
-        text: 'NEW',
-      },
+    },
+    {
+      name: 'Loans',
+      url: '/dashboard',
+      icon: 'icon-money',
+    },
+    {
+      name: 'Savings',
+      url: '/dashboard',
+      icon: 'icon-speedometer',
     },
     {
       name: 'Pages',
