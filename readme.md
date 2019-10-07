@@ -39,3 +39,4 @@ These are some of the things I attempted to achieve and cover while completing t
 - [x] Unit Tests with Jest
 - [ ] Code Documentation
 - [x] DDD and SoC
+- [x] React Frontend
